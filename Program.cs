@@ -39,13 +39,14 @@ namespace sortMehtods
             int[] tempArr = new int[max + 1];
             for (int i = 0; i < myArr.Length; i++)
             {
-                for (int j = 0; j < tempArr.Length; j++)
-                {
-                    if (j == myArr[i])
-                    {
-                        tempArr[j]++;
-                    }
-                }
+                tempArr[myArr[i]]++;
+                //for (int j = 0; j < tempArr.Length; j++)
+                //{
+                //    if (j == myArr[i])
+                //    {
+                //        tempArr[j]++;
+                //    }
+                //}
             }
             for (int i = 0, j = 0; i < tempArr.Length; i++)
             {
